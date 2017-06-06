@@ -4,43 +4,43 @@ title: Tasking Manager
 permalink: /en/coordination/tasking-manager/
 lang: en
 category: coordination
+published: true
 ---
 
 # Tasking Manager
 
-> This guide may be downloaded as [tasking-manager_en.odt](/files/tasking-manager_en.odt) or [tasking-manager_en.pdf](/files/tasking-manager_en.pdf)  
-> Reviewed 2015-08-26  
+> 此指南能在 [tasking-manager_zh-tw.odt](/files/tasking-manager_zh-tw.odt) 或 [tasking-manager_zh-tw.pdf](/files/tasking-manager_zh-tw.pdf)  下載
+> 2017-06-06 審閱
 
-Section Index
+章節索引
 -------------
--  [Overview of how HOT uses the Tasking Manager](/en/coordination/tasking-manager/#overview-of-the-process)  
--  [Languages, Options, help links, and other links. Your user page - list of projects you have assisted in, and messages](/en/coordination/tasking-manager/#options-amp-links)  
--  [Logging in](/en/coordination/tasking-manager/#getting-started-with-the-tasking-manager)  
--  [Finding a project](/en/coordination/tasking-manager/#locating-a-project)  
--  [Description, Map grid, Instructions, Contributing, Activity, Statistics for a project](/en/coordination/tasking-manager/#description)  
--  [Selecting a square to map, timer, releasing](/en/coordination/tasking-manager/#selecting-a-square-to-map)  
--  [JOSM, iD, Potlatch 2, Field Papers, Walking Papers](/en/coordination/tasking-manager/#editing-choices)  
--  [Splitting a square](/en/coordination/tasking-manager/#splitting-a-square)  
--  [Releasing your square before it is complete](/en/coordination/tasking-manager/#unlocking-a-square-before-it-is-complete)  
--  [Marking your square as complete](/en/coordination/tasking-manager/#finishing-a-square)  
--  [Sending messages](/en/coordination/tasking-manager/#sending-a-message-from-the-comment-box)  
--  [identifying your square in an email or other message](/en/coordination/tasking-manager/#referring-to-a-particular-square-when-sending-an-email)  
--  [Live Help - IRC, Internet Relay Chat](/en/coordination/tasking-manager/#getting-live-help)  
--  [Hints and Tips](/en/coordination/tasking-manager/#editing-hints-and-tips)
+-  [概述：人道開放街圖小組如何使用任務分配管理系統](/zh-tw/coordination/tasking-manager/#overview-of-the-process)  
+-  [語言、選項、說明連結、其他連結。您的使用者頁面——列出所有您協助過的任務以及對話訊息](/zh-tw/coordination/tasking-manager/#options-amp-links)  
+-  [登入](/zh-tw/coordination/tasking-manager/#getting-started-with-the-tasking-manager)  
+-  [尋找任務](/zh-tw/coordination/tasking-manager/#locating-a-project)  
+-  [敘述、地圖方格、指引、貢獻、活動、任務統計資訊](/zh-tw/coordination/tasking-manager/#description)  
+-  [在地圖上選擇一塊繪製區域、設定期間、發佈](/zh-tw/coordination/tasking-manager/#selecting-a-square-to-map)  
+-  [JOSM、iD、Potlatch 2、Field Papers、Walking Papers](/zh-tw/coordination/tasking-manager/#editing-choices)  
+-  [分割繪製區域](/zh-tw/coordination/tasking-manager/#splitting-a-square)  
+-  [在您繪製的區域完成前發佈](/zh-tw/coordination/tasking-manager/#unlocking-a-square-before-it-is-complete)  
+-  [標記您的繪製區域已完成](/zh-tw/coordination/tasking-manager/#finishing-a-square)  
+-  [發送對話訊息](/zh-tw/coordination/tasking-manager/#sending-a-message-from-the-comment-box)  
+-  [在電子郵件或是其他訊息中標示您的繪製區域](/zh-tw/coordination/tasking-manager/#referring-to-a-particular-square-when-sending-an-email)  
+-  [即時協助—— IRC（網際網路中繼聊天，Internet Relay Chat）](/zh-tw/coordination/tasking-manager/#getting-live-help)  
+-  [小撇步](/zh-tw/coordination/tasking-manager/#editing-hints-and-tips)
 
 
-The HOT Tasking Manager, <http://tasks.hotosm.org/>, is an intuitive tool that mappers can use to sort an area into a grid, and work together to map an area in an organized way. This allows mappers throughout the world to assist in mapping a defined region with a minimum risk of overlapping work areas, and also allows people both on the ground and working remotely (also sometimes referred to as "armchair mappers") to collaborate effectively, rapidly, and avoid accidental rework being required due to conflicts.  
+「人道開放街圖小組任務分配管理系統（The HOT Tasking Manager）<http://tasks.hotosm.org/> 」是一個讓地圖繪製者（「mapper」，以下簡稱圖客）可以直覺而快速地將想要繪製的區域分成多格，以便更有條理分工合作的任務工具。這個工具讓來自世界各地的圖客，能夠在共同合作同時繪製同一塊地區的時候，降低繪製區域重疊而造成編輯衝突的風險。同時這個工具也能夠讓有實際在當地與在遠端繪製的圖客有效地共同合作。
+
+## 流程概述
+
+1. 任務管理員先選出開放街圖計畫裡面需要更新的圖資區域。任務管理員首先要確保這個區域有適當的衛星或鳥瞰圖，以方便圖客可以從線上協助描繪。接下來，管理員便創建要繪製的區域範圍，並且在任務說明中敘述地圖的細節需求程度、時效警急程度、還有其他須知事項。當上述事項都確認後，任務管理員便可以公開發佈新任務，而任務的設定之後還可以再修正。
+2. 任務區域由第一位圖客認領、繪製、並且標記區塊完成。
+3. 任務區域由第二位圖客進行複查任務，確認標記完成的區塊是否符合繪製準則，檢查完後標記為「完成」。
+4. 任務的繪圖進展可從「統計數據」分頁掌握，同時如果某個任務區塊太大單個圖客畫不完，任務管理員也可以再把那個區塊切小或者是存檔待下次任務。
 
 
-## Overview of the process
-
-1. An administrator selects an area requiring updating in OpenStreetMap. The administrator ensures there is suitable satellite imagery available for remote mappers to trace, and creates a project covering the area. The level of detail required and the urgency are specified within the project together with any other information the remote mapper will require. When satisfied, the administrator publishes the project within the Tasking Manager, although they may also make changes later if required.  
-2. A remote mapper selects a task square, completes the mapping, and marks the square as complete.  
-3. A second remote mapper checks that the square is completed to a satisfactory level and marks the square as 'validated'  
-4. Progress of the mapping of the project can be monitored from within the "stats" tab of the project, and the project can be downgraded or archived as required by an administrator.  
-
-
-## Options & links
+## 選項與連結
 
 The Task Manager initially displays in English - to change to another language click on **English** in the red header banner.  
 
@@ -56,7 +56,7 @@ Once you have logged in, you may click on your username at the top. Here you can
 ![Tasking Manager Username_list][]  
 
 
-## Getting started with the Tasking Manager
+## 開始使用任務分配管理系統
 
 You may view projects as a visitor, but to actively participate you must be logged into the Tasking Manager - use your OpenStreetMap account username & password. Open your Internet browser and go to <http://tasks.hotosm.org>. You will see a page like this:  
 
@@ -68,7 +68,7 @@ You may view projects as a visitor, but to actively participate you must be logg
 ![Authorizing access to OSM account by the Tasking Manager][]
 
 
-## Locating a project
+## 尋找特定任務
 
 The current list of projects may be sorted according to:  
 
@@ -85,7 +85,7 @@ Click on a blue project title to see more information about that project.
 ![Job description][]
 
 
-## Description
+## 填寫任務敘述
 
 Everything you need to know about the project is here! On the left is a description of the mapping project and what is required. On the right side is a grid showing the area to be mapped;  
 
