@@ -4,7 +4,7 @@ title: Tasking Manager
 permalink: /en/coordination/tasking-manager/
 lang: en
 category: coordination
-published: true
+published: false
 ---
 
 # Tasking Manager
