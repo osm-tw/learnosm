@@ -7,6 +7,8 @@ category: coordination
 published: false
 ---
 
+此處的翻譯已經轉到transifex繼續： https://www.transifex.com/hotosm/learnosm-1/translate/#zh_TW/0500-10-25-tasking-managermd
+
 # Tasking Manager
 
 > 此指南能在 [tasking-manager_zh-tw.odt](/files/tasking-manager_zh-tw.odt) 或 [tasking-manager_zh-tw.pdf](/files/tasking-manager_zh-tw.pdf)  下載
